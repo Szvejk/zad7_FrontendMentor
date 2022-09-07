@@ -21,15 +21,17 @@ body {
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
+  z-index: 2;
 }
-.basic button,
-.professional button,
-.master button {
+.basic .learn,
+.professional .learn,
+.master .learn {
   width: 40vw;
   height: 5vh;
   text-align: center;
-  background-color: hsl(233deg, 13%, 49%);
-  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(236deg, 72%, 79%)), to(hsl(237deg, 63%, 64%)));
+  background: linear-gradient(180deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
@@ -67,10 +69,11 @@ main .professional {
   grid-column: 1/2;
   grid-row: 2/3;
   color: aliceblue;
-  background-color: rgb(77, 52, 145);
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(236deg, 72%, 79%)), to(hsl(237deg, 63%, 64%)));
+  background: linear-gradient(180deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
 }
-main .professional button {
-  background-color: #fff;
+main .professional .learn {
+  background: #fff;
   color: black;
 }
 main .master {
@@ -136,4 +139,7 @@ header span {
 }
 header span .fa-solid {
   margin: 10px;
+}
+header .image {
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
