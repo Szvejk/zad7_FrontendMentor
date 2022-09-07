@@ -1,0 +1,139 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.basic,
+.professional,
+.master {
+  width: 80vw;
+  height: 40vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 5vh;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+}
+.basic button,
+.professional button,
+.master button {
+  width: 40vw;
+  height: 5vh;
+  text-align: center;
+  background-color: hsl(233deg, 13%, 49%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.basic .box,
+.professional .box,
+.master .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 45px;
+  border-top: 2px dotted gray;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: 4fr;
+  grid-gap: 20px;
+}
+main .basic {
+  background-color: red;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #fff;
+}
+main .professional {
+  background-color: pink;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: aliceblue;
+  background-color: rgb(77, 52, 145);
+}
+main .professional button {
+  background-color: #fff;
+  color: black;
+}
+main .master {
+  background-color: blue;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: #fff;
+}
+main .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .price .title {
+  margin-bottom: 15px;
+}
+main .price .dolar {
+  font-size: 40px;
+}
+main .price .dolardollar {
+  font-size: 5px;
+}
+
+header .text {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+  color: gray;
+}
+header span .fa-solid {
+  margin: 10px;
+}/*# sourceMappingURL=style.css.map */
