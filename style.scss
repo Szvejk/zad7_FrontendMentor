@@ -23,7 +23,6 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	text-align: center;
 
-
 	.learn {
 		width: 40vw;
 		height: 5vh;
@@ -115,53 +114,57 @@ header {
 	}
 }
 @media (min-width: 576px) {
-	main {
-		display: grid;
-		grid-template-columns: (4, 1fr);
-		grid-template-rows: 4fr;
-		margin: 0 auto;
-		height: 50vh;
-		width: 50vw;
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		main {
+			display: grid;
+			grid-template-columns: (4, 1fr);
+			grid-template-rows: 4fr;
+			margin: 0 auto;
+			height: 50vh;
+			width: 50vw;
 
-		.basic,
-		.professional,
-		.master {
-			width: 300px;
-			height: 500px;
-			font-size: 15px;
-			color: black;
-			padding: 0vh;
-			margin: 0;
+			.basic,
+			.professional,
+			.master {
+				width: 300px;
+				height: 500px;
+				font-size: 15px;
+				color: black;
+				padding: 0vh;
+				margin: 0;
 
-			.learn {
-				width: 250px;
-				height: 50px;
-				text-align: center;
-				margin: 0 auto;
+				.learn {
+					width: 250px;
+					height: 50px;
+					text-align: center;
+					margin: 0 auto;
+				}
+				.box {
+					margin-bottom: 35px;
+				}
+				.price {
+					margin-top: 50px;
+				}
 			}
-			.box {
-				margin-bottom: 35px;
+			.professional {
+				grid-column: 2/3;
+				grid-row: 1/2;
+				color: #fff;
+				.box {
+					border-color: #fff;
+				}
 			}
-			.price {
-				margin-top: 50px;
+			.basic {
+				grid-column: 1/2;
+				grid-row: 1/4;
 			}
-		}
-		.professional {
-			grid-column: 2/3;
-			grid-row: 1/2;
-			color: #fff;
-			.box {
-				border-color: #fff;
+			.master {
+				grid-column: 3/4;
+				grid-row: 1/2;
 			}
-		}
-		.basic {
-			grid-column: 1/2;
-			grid-row: 1/4;
-			
-		}
-		.master {
-			grid-column: 3/4;
-			grid-row: 1/2;
 		}
 	}
 }

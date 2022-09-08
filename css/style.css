@@ -149,7 +149,18 @@ header .image {
 }
 
 @media (min-width: 576px) {
-  main {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper main {
     display: grid;
     grid-template-columns: 4, 1fr;
     grid-template-rows: 4fr;
@@ -157,9 +168,9 @@ header .image {
     height: 50vh;
     width: 50vw;
   }
-  main .basic,
-main .professional,
-main .master {
+  .wrapper main .basic,
+.wrapper main .professional,
+.wrapper main .master {
     width: 300px;
     height: 500px;
     font-size: 15px;
@@ -167,37 +178,37 @@ main .master {
     padding: 0vh;
     margin: 0;
   }
-  main .basic .learn,
-main .professional .learn,
-main .master .learn {
+  .wrapper main .basic .learn,
+.wrapper main .professional .learn,
+.wrapper main .master .learn {
     width: 250px;
     height: 50px;
     text-align: center;
     margin: 0 auto;
   }
-  main .basic .box,
-main .professional .box,
-main .master .box {
+  .wrapper main .basic .box,
+.wrapper main .professional .box,
+.wrapper main .master .box {
     margin-bottom: 35px;
   }
-  main .basic .price,
-main .professional .price,
-main .master .price {
+  .wrapper main .basic .price,
+.wrapper main .professional .price,
+.wrapper main .master .price {
     margin-top: 50px;
   }
-  main .professional {
+  .wrapper main .professional {
     grid-column: 2/3;
     grid-row: 1/2;
     color: #fff;
   }
-  main .professional .box {
+  .wrapper main .professional .box {
     border-color: #fff;
   }
-  main .basic {
+  .wrapper main .basic {
     grid-column: 1/2;
     grid-row: 1/4;
   }
-  main .master {
+  .wrapper main .master {
     grid-column: 3/4;
     grid-row: 1/2;
   }
