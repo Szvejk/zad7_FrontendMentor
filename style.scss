@@ -6,6 +6,10 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
+	background-image: url(../images/bg-top.svg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	margin: 0 auto;
 }
 
 .basic,
@@ -18,7 +22,7 @@ body {
 	padding: 5vh;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	text-align: center;
-	z-index: 2;
+
 
 	.learn {
 		width: 40vw;
@@ -56,6 +60,7 @@ main {
 		grid-row: 2/3;
 		color: aliceblue;
 		background: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+		transform: scale(1.05);
 		.learn {
 			background: #fff;
 			color: black;
@@ -86,13 +91,14 @@ main {
 }
 header {
 	.text {
-		margin: 30px;
+		margin: 20px;
 		display: flex;
 		font-size: 25px;
 		justify-content: center;
 		align-items: center;
 	}
 	span {
+		margin-bottom: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -143,7 +149,6 @@ header {
 		.professional {
 			grid-column: 2/3;
 			grid-row: 1/2;
-			gap: 0px;
 			color: #fff;
 			.box {
 				border-color: #fff;
@@ -152,7 +157,7 @@ header {
 		.basic {
 			grid-column: 1/2;
 			grid-row: 1/4;
-			gap: 0px;
+			
 		}
 		.master {
 			grid-column: 3/4;

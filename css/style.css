@@ -8,6 +8,10 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
+  background-image: url(../images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin: 0 auto;
 }
 
 .basic,
@@ -21,7 +25,6 @@ body {
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
-  z-index: 2;
 }
 .basic .learn,
 .professional .learn,
@@ -70,6 +73,8 @@ main .professional {
   color: aliceblue;
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(236deg, 72%, 79%)), to(hsl(237deg, 63%, 64%)));
   background: linear-gradient(180deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 main .professional .learn {
   background: #fff;
@@ -106,7 +111,7 @@ main .price .dolardollar {
 }
 
 header .text {
-  margin: 30px;
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,6 +124,7 @@ header .text {
           align-items: center;
 }
 header span {
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +188,6 @@ main .master .price {
   main .professional {
     grid-column: 2/3;
     grid-row: 1/2;
-    gap: 0px;
     color: #fff;
   }
   main .professional .box {
@@ -191,7 +196,6 @@ main .master .price {
   main .basic {
     grid-column: 1/2;
     grid-row: 1/4;
-    gap: 0px;
   }
   main .master {
     grid-column: 3/4;
