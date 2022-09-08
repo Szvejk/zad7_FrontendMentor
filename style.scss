@@ -18,7 +18,7 @@ body {
 	padding: 5vh;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	text-align: center;
-    z-index: 2;
+	z-index: 2;
 
 	.learn {
 		width: 40vw;
@@ -29,6 +29,7 @@ body {
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		font-weight: bold;
+		border-color: transparent;
 	}
 	.box {
 		display: flex;
@@ -46,13 +47,11 @@ main {
 	grid-gap: 20px;
 
 	.basic {
-		background-color: red;
 		grid-column: 1/2;
 		grid-row: 1/2;
 		background-color: #fff;
 	}
 	.professional {
-		background-color: pink;
 		grid-column: 1/2;
 		grid-row: 2/3;
 		color: aliceblue;
@@ -63,7 +62,6 @@ main {
 		}
 	}
 	.master {
-		background-color: blue;
 		grid-column: 1/2;
 		grid-row: 3/4;
 		background-color: #fff;
@@ -106,7 +104,59 @@ header {
 			margin: 10px;
 		}
 	}
-    .image{
-        z-index: -1;
-    }
+	.image {
+		z-index: -1;
+	}
+}
+@media (min-width: 576px) {
+	main {
+		display: grid;
+		grid-template-columns: (4, 1fr);
+		grid-template-rows: 4fr;
+		margin: 0 auto;
+		height: 50vh;
+		width: 50vw;
+
+		.basic,
+		.professional,
+		.master {
+			width: 300px;
+			height: 500px;
+			font-size: 15px;
+			color: black;
+			padding: 0vh;
+			margin: 0;
+
+			.learn {
+				width: 250px;
+				height: 50px;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.box {
+				margin-bottom: 35px;
+			}
+			.price {
+				margin-top: 50px;
+			}
+		}
+		.professional {
+			grid-column: 2/3;
+			grid-row: 1/2;
+			gap: 0px;
+			color: #fff;
+			.box {
+				border-color: #fff;
+			}
+		}
+		.basic {
+			grid-column: 1/2;
+			grid-row: 1/4;
+			gap: 0px;
+		}
+		.master {
+			grid-column: 3/4;
+			grid-row: 1/2;
+		}
+	}
 }
