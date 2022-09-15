@@ -6,26 +6,24 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
-	background-image: url(../images/bg-top.svg);
+	background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
 	background-repeat: no-repeat;
-	background-position: top right;
-	margin: 0 auto;
+	background-position: top right, left bottom;
+//	margin: 0 auto;
+	min-height: 100vh;
 }
 
 .basic,
 .professional,
 .master {
-	width: 80vw;
-	height: 40vh;
-	margin: 0 auto;
 	border-radius: 10px;
 	padding: 5vh;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	text-align: center;
 
 	.learn {
-		width: 40vw;
-		height: 5vh;
+		// width: 40vw;
+		// height: 5vh;
 		text-align: center;
 		background: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 		color: white;
@@ -45,7 +43,7 @@ body {
 
 main {
 	display: grid;
-	grid-template-columns: (2, 1fr);
+	grid-template-columns: (3, 1fr);
 	grid-template-rows: 4fr;
 	grid-gap: 20px;
 
@@ -55,7 +53,7 @@ main {
 		background-color: #fff;
 	}
 	.professional {
-		grid-column: 1/2;
+		grid-column: 2/3;
 		grid-row: 2/3;
 		color: aliceblue;
 		background: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
@@ -66,7 +64,7 @@ main {
 		}
 	}
 	.master {
-		grid-column: 1/2;
+		grid-column: 3/4;
 		grid-row: 3/4;
 		background-color: #fff;
 	}
@@ -91,17 +89,14 @@ main {
 header {
 	.text {
 		margin: 20px;
-		display: flex;
+		text-align: center;
 		font-size: 25px;
-		justify-content: center;
-		align-items: center;
 	}
 	span {
 		margin-bottom: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		flex-direction: row;
 		margin-bottom: 20px;
 		color: gray;
 
@@ -109,9 +104,9 @@ header {
 			margin: 10px;
 		}
 	}
-	.image {
-		z-index: -1;
-	}
+	// .image {
+	// 	z-index: -1;
+	// }
 }
 @media (min-width: 576px) {
 	.wrapper {
@@ -122,9 +117,8 @@ header {
 			display: grid;
 			grid-template-columns: (4, 1fr);
 			grid-template-rows: 4fr;
-			margin: 0 auto;
-			height: 50vh;
-			width: 50vw;
+			// height: 50vh;
+			// width: 50vw;
 
 			.basic,
 			.professional,
